@@ -1,0 +1,27 @@
+SET server:name "fido"
+
+GET server:name
+
+SET connections 10
+INCR connections
+INCR connections
+DEL connections
+
+SET resource:lock "Redis Demo 1"
+EXPIRE resource:lock 30
+TTL resource:lock
+
+SET resource:lock "Redis Demo 2"
+TTL resource:lock
+
+RPUSH friends "Alice"
+RPUSH friends "Bob"
+LPUSH friends "Sam"
+LRANGE friends 0 -1
+LRANGE friends 0 1
+LRANGE friends 1 2
+LLEN friends
+LPOP friends
+RPOP friends
+
+
