@@ -6,3 +6,9 @@ HGETALL user:1000
 
 HMSET user:1001 name "Mary Jones" password "hidden" email "mjones@example.com"
 HGET user:1001 name
+
+HSET user:1000 visits 10
+HINCRBY user:1000 visits 1
+HINCRBY user:1000 visits 10
+HDEL user:1000 visits
+HINCRBY user:1000 visits 1
