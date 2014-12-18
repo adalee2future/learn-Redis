@@ -1,0 +1,10 @@
+SADD superpowers "flight"
+SADD superpowers "x-ray vision"
+SADD superpowers "reflexes"
+SREM superpowers "reflexes"
+SISMEMBER superpowers "flight"
+SISMEMBER superpowers "reflexes"
+SMEMBERS superpowers
+SADD birthpowers "pecking"
+SADD birthpowers "flight"
+SUNION superpowers birthpowers

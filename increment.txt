@@ -1,0 +1,4 @@
+SET connections 10
+INCR connections
+INCR connections
+DEL connections

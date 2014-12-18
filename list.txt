@@ -1,0 +1,9 @@
+RPUSH friends "Alice"
+RPUSH friends "Bob"
+LPUSH friends "Sam"
+LRANGE friends 0 -1
+LRANGE friends 0 1
+LRANGE friends 1 2
+LLEN friends
+LPOP friends
+RPOP friends

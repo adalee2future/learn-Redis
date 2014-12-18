@@ -1,0 +1,3 @@
+SET server:name "fido"
+
+GET server:name
