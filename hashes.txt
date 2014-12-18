@@ -1,0 +1,8 @@
+HSET user:1000 name "John Smith"
+HSET user:1000 email "john.smith@example.com"
+HSET user:1000 password "s3cret"
+
+HGETALL user:1000
+
+HMSET user:1001 name "Mary Jones" password "hidden" email "mjones@example.com"
+HGET user:1001 name

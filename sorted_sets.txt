@@ -1,0 +1,11 @@
+ZADD hackers 1940 "Alan Kay"
+ZADD hackers 1906 "Grace Hopper"
+ZADD hackers 1953 "Richard Stallman"
+ZADD hackers 1965 "Yukihiro Matsumoto"
+ZADD hackers 1916 "Claude Shannon"
+ZADD hackers 1969 "Linus Torvals"
+ZADD hackers 1957 "Sophie Wilson"
+ZADD hackers 1912 "Alan Turing"
+
+ZRANGE hackers 0 -1
+ZRANGE hackers 2 4
